@@ -22,16 +22,14 @@ export class FlightService {
       let oldFlight = oldFlights[0];
       let oldDate: Date = new Date(oldFlight.date);
 
-      oldDate.setTime(oldDate.getTime() + ONE_MINUTE * 15);
-      oldFlight.date = oldDate.toISOString();
+      // oldDate.setTime(oldDate.getTime() + ONE_MINUTE * 15);
+      // oldFlight.date = oldDate.toISOString();
 
-      /*
       let newDate: Date = new Date(oldDate.getTime() + ONE_MINUTE * 15);
       let newFlight: Flight = { ...oldFlight, date: newDate.toISOString() };
       let newFlights: Flight[] = [ newFlight, ...oldFlights.slice(1) ];
 
       this.flights = newFlights;
-      */
     }
 
     findById(id: string): Observable<Flight> {

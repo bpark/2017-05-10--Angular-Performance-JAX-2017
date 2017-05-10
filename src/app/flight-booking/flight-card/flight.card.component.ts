@@ -7,7 +7,7 @@ import { Flight } from '../../entities/flight';
 @Component({
     selector: 'flight-card',
     templateUrl: './flight-card.component.html',
-    // changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FlightCardComponent  {
 

@@ -33,7 +33,7 @@ let APP_ROUTES: Routes = [
 export let AppRouterModule = 
     RouterModule.forRoot(
                     APP_ROUTES, 
-//                    { preloadingStrategy: PreloadAllModules } 
+                    { preloadingStrategy: PreloadAllModules } 
     );
 
 
